@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/" />
+        
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+
+        <!--Config-->
+        <script src="/App/app.module.js"></script>
+        <script src="/App/app.routes.js"></script>
+
+        <!--Controllers-->
+        <script src="/App/AppController.js"></script>
+        <script src="/App/Pages/Unique/Home/HomeController.js"></script>
+        <script src="/App/Pages/Unique/EnterBio/EnterBioController.js"></script>
+    </head>
+
+    <body ng-app="app">
+        <div ng-controller="AppController as appVm">
+            <div ng-view></div>
+        </div>
+    </body>
+</html>
