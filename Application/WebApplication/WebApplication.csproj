@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Libraries\bower_components\angular-route\.bower.json" />
+    <Content Include="Libraries\bower_components\angular.min\.bower.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -67,19 +69,24 @@
   <ItemGroup>
     <Content Include="App\app.module.js" />
     <Content Include="App\app.routes.js" />
-    <Content Include="App\AppController.js" />
+    <Content Include="App\app.controller.js" />
+    <Content Include="App\Directives\HomeModule\homeModule.directive.js" />
+    <Content Include="App\Directives\HomeModule\homeModule.template.html" />
     <Content Include="App\index.html" />
-    <Content Include="App\Pages\Unique\EnterBio\EnterBioController.js" />
-    <Content Include="App\Pages\Unique\EnterBio\EnterBioTemplate.html" />
-    <Content Include="App\Pages\Unique\Home\HomeController.js" />
-    <Content Include="App\Pages\Unique\Home\HomeTemplate.html" />
+    <Content Include="App\Pages\Unique\EnterBio\enterBio.controller.js" />
+    <Content Include="App\Pages\Unique\EnterBio\enterBio.template.html" />
+    <Content Include="App\Pages\Unique\Home\home.controller.js" />
+    <Content Include="App\Pages\Unique\Home\home.template.html" />
+    <Content Include="Libraries\bower_components\angular-route\index.js" />
+    <Content Include="Libraries\bower_components\angular.min\index.js" />
+    <Content Include="Libraries\bower_components\jquery.min\.bower.json" />
+    <Content Include="Libraries\bower_components\jquery.min\index.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Directives\Sample\" />
     <Folder Include="App\Pages\Shared\Footer\" />
     <Folder Include="App\Pages\Shared\Header\" />
     <Folder Include="App\Services\" />

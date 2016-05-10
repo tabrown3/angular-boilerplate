@@ -4,23 +4,21 @@
         <base href="/" />
         
         <title></title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+        <script src="/Libraries/bower_components/jquery.min/index.js"></script>
+        <script src="/Libraries/bower_components/angular.min/index.js"></script>
+        <script src="/Libraries/bower_components/angular-route/index.js"></script>
 
         <!--Config-->
         <script src="/App/app.module.js"></script>
         <script src="/App/app.routes.js"></script>
 
         <!--Controllers-->
-        <script src="/App/AppController.js"></script>
-        <script src="/App/Pages/Unique/Home/HomeController.js"></script>
-        <script src="/App/Pages/Unique/EnterBio/EnterBioController.js"></script>
+        <script src="/App/app.controller.js"></script>
+        <script src="/App/Pages/Unique/Home/home.controller.js"></script>
+        <script src="/App/Pages/Unique/EnterBio/enterBio.controller.js"></script>
     </head>
 
     <body ng-app="app">
-        <div ng-controller="AppController as appVm">
-            <div ng-view></div>
-        </div>
+        <div ng-controller="AppController as appVm" ng-view></div>
     </body>
 </html>

@@ -3,19 +3,23 @@
 
     angular
         .module('app')
-        .config(['$routeProvider', '$locationProvider', config]);
+        .config(config);
+
+    config.$inject = ['$routeProvider', '$locationProvider'];
 
     function config($routeProvider, $locationProvider) {
-        //$locationProvider.hashPrefix('!');
+        //$locationProvider.html5Mode(true);
 
         $routeProvider.
             when('/Home', {
-                templateUrl: '/App/Pages/Unique/Home/HomeTemplate.html',
-                controller: 'HomeController as homeVm'
+                templateUrl: '/App/Pages/Unique/Home/home.template.html',
+                controller: 'HomeController',
+                controllerAs: 'homeVm'
             }).
             when('/EnterBio', {
-                templateUrl: '/App/Pages/Unique/EnterBio/EnterBioTemplate.html',
-                controller: 'EnterBioController as bioVm'
+                templateUrl: '/App/Pages/Unique/EnterBio/enterBio.template.html',
+                controller: 'EnterBioController',
+                controllerAs: 'bioVm'
             }).
             otherwise({
                 redirectTo: '/Home'
