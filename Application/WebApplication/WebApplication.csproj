@@ -57,8 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Filters\trusted.filter.js" />
+    <Content Include="App\Services\quotes.service.js" />
     <Content Include="Libraries\bower_components\angular-route\.bower.json" />
     <Content Include="Libraries\bower_components\angular.min\.bower.json" />
+    <Content Include="Libraries\bower.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -89,7 +92,6 @@
   <ItemGroup>
     <Folder Include="App\Pages\Shared\Footer\" />
     <Folder Include="App\Pages\Shared\Header\" />
-    <Folder Include="App\Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

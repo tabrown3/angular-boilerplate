@@ -8,6 +8,6 @@
     function EnterBioController() {
         var vm = this;
 
-        vm.things = "Hello from EnterBio!";
+        vm.title = "Hello from EnterBio!";
     }
 })();

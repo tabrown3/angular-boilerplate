@@ -5,9 +5,23 @@
         .module("app")
         .controller("HomeController", HomeController);
 
-    function HomeController() {
+    HomeController.$inject = ['quotes'];
+
+    function HomeController(quotes) {
         var vm = this;
 
-        vm.things = "Hello from Home!";
+        vm.title = "This is HomeController";
+        vm.quotes = {};
+
+        getQuotes();
+
+        function getQuotes() {
+            return quotes.getRandQuote().then(function (res) {
+
+                vm.quotes = res;
+
+                return vm.quotes;
+            });
+        }
     }
 })();

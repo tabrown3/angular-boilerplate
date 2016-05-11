@@ -8,5 +8,6 @@
     function AppController() {
         var vm = this;
 
+        vm.title = "Angular Boilerplate";
     }
 })();

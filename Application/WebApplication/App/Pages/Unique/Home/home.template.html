@@ -1,1 +1,16 @@
-﻿<div>{{homeVm.things}}</div>
+﻿<article>
+    <header>
+        <h1>{{appVm.title}}</h1>
+        <h2>{{homeVm.title}}</h2>
+    </header>
+
+    <section>
+        <h3>Quote and Attribution</h3>
+        <blockquote>
+            <div ng-bind-html="homeVm.quotes.quote | trusted"></div>
+            <footer>- <cite>{{homeVm.quotes.author}}</cite></footer>
+        </blockquote>
+    </section>
+</article>
+
+<how-home-module></how-home-module>
